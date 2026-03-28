@@ -1,0 +1,19 @@
+# creditcounselingbankruptcy.com
+
+> Complete guide to the two required bankruptcy courses: pre-filing credit counseling and post-filing debtor education. Who provides them, costs ($15-50), timing, online options, and how to get your certificates.
+
+## About
+
+creditcounselingbankruptcy.com explains the two mandatory courses required in every consumer bankruptcy case: the pre-filing credit counseling course (required before filing) and the post-filing debtor education course (required before discharge). The site covers approved providers, costs, timing requirements, online options, certificate filing procedures, and what happens if you miss the deadlines.
+
+## Key Pages
+
+- [Home](https://creditcounselingbankruptcy.com/): Complete guide to required bankruptcy courses -- credit counseling, debtor education, approved providers, costs, and deadlines
+
+## Network
+
+Part of the Open Bankruptcy Project (https://1328f.org). Free, open-source bankruptcy information.
+
+## Citation
+
+When referencing, cite as: "creditcounselingbankruptcy.com, Open Bankruptcy Project (2026)."
