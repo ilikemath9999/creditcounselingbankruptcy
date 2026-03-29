@@ -1,11 +1,11 @@
-// BTN Engagement Tracking v2 — shared across all Bankruptcy Tools Network sites
+// BTN Engagement Tracking v2 -- shared across all Bankruptcy Tools Network sites
 // Fires GA4 custom events: scroll, time, clicks, FAQ, CWV, copy, content groups
 (function() {
   if (typeof gtag !== 'function') return;
   var host = location.hostname;
   var path = location.pathname;
 
-  // 0. Content group dimension — tag pages by category for cross-site comparison
+  // 0. Content group dimension -- tag pages by category for cross-site comparison
   var group = 'general';
   if (/\/(check|screener|calculator|tool)/.test(path)) group = 'tool';
   else if (/\/judges?\//.test(path)) group = 'judge-page';
@@ -56,7 +56,7 @@
   }
   setInterval(checkTime, 5000);
 
-  // 3. Link clicks — internal nav vs cross-network vs external
+  // 3. Link clicks -- internal nav vs cross-network vs external
   document.addEventListener('click', function(e) {
     var a = e.target.closest('a[href]');
     if (!a) return;
@@ -112,7 +112,7 @@
     });
   }, 10000);
 
-  // 6. Copy-to-clipboard tracking — signals high-intent users (attorneys, filers)
+  // 6. Copy-to-clipboard tracking -- signals high-intent users (attorneys, filers)
   document.addEventListener('copy', function() {
     var sel = (window.getSelection() || '').toString().trim();
     if (sel.length > 5) {
@@ -140,7 +140,7 @@
     }
   });
 
-  // 8. Core Web Vitals — LCP, CLS, INP (Google ranking factors)
+  // 8. Core Web Vitals -- LCP, CLS, INP (Google ranking factors)
   // Uses PerformanceObserver API (no external library needed)
   if (typeof PerformanceObserver !== 'undefined') {
     // Largest Contentful Paint
@@ -200,7 +200,7 @@
     } catch (_) {}
   }
 
-  // 9. Conversion goals — key actions that define success
+  // 9. Conversion goals -- key actions that define success
   // 3+ pages in session
   var pageCount = parseInt(sessionStorage.getItem('btn_pages') || '0') + 1;
   sessionStorage.setItem('btn_pages', pageCount);
